@@ -243,3 +243,11 @@ def main(df, path_imgs, path_save):
                 dataset.add_instance(img_name, img_aug, aug_coors, clss, to_train=True)
 
         dataset.dump_sets(path_save, split_idx)
+
+
+if __name__ == '__main__':
+
+    df = pd.read_csv('')
+    df = df[df['Target'] == 1]
+
+    main()
